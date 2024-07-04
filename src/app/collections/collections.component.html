@@ -1,0 +1,36 @@
+<section id="Collections">
+    <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img [src]="mainImageUrl" class="w-100 h-100" alt="">
+            <div class="logo">
+              <div class="image" (click)="changeMainImage(image4Url)">
+                <img [src]="image4Url" class="w-100 h-100" alt="">
+              </div>
+              <div class="image" (click)="changeMainImage(image5Url)">
+                <img [src]="image5Url" class="w-100 h-100" alt="">
+              </div>
+              <div class="image" (click)="changeMainImage(image8Url)">
+                <img [src]="image8Url" class="w-100 h-100" alt="">
+              </div>
+              <div class="image" (click)="changeMainImage(image11Url)">
+                <img [src]="image11Url" class="w-100 h-100" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+              <p>Sneakers company</p>
+              <h1>Fall Limited Edition Sneakers</h1>
+              <span>Tehse low-profile sneakers are your perfect casual wear xompamiom.Featuring a durable rubber outer sole,they'll withstand everything the weather can offer.</span>
+              <h4>$125.00</h4>
+              <h5>50%</h5>
+              <h6>$250.00 <hr></h6>
+              <button class="buttons"><i class='bx bx-cart-alt'></i>add to cart</button>
+              <div class="wrapper">
+                <button class="iconus" id="minus" (click)="decrement()">-</button>
+                <span class="mx-4" id="show">{{ count }}</span>
+                <button class="iconus" id="plus" (click)="increment()">+</button>
+              </div>
+            </div>
+        </div>
+      </div>

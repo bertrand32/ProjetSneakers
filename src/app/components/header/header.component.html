@@ -1,0 +1,74 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Sneakers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="currentSection === 'Collections'" routerLink="/collections">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="currentSection === 'Men'" routerLink="/men">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="currentSection === 'Woman'" routerLink="/women">Woman</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="currentSection === 'About'" routerLink="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [class.active]="currentSection === 'Contact'" routerLink="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="icons">
+        <i class='bx bx-cart-alt'></i>
+        <img src="/image/image 6.jpeg" alt="">
+      </div>
+      <div class="icon">
+        <hr>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+<style>
+    .container-fluid{
+        padding: 70px;
+    }
+    .nav-item{
+        margin-left: 4rem;
+    }
+    .nav-link.active{
+        color: #ff4500 !important;
+    }
+    .nav-link:hover{
+        color: #ff4500 !important;
+    }
+    .icons{
+    } 
+    .icons i{
+        font-size: 25px;
+        position: relative;  
+        top: 33px;
+        left: 60px;
+    }
+    .icons img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 130px;
+        position: relative;
+        bottom: 14px;
+    }
+    .icon hr{
+        position: relative;
+        top: 4rem;
+        right: 63rem;  
+        width: 64rem;
+    }
+    .navbar-brand{
+      font-size: 32px;
+    }
+</style>
